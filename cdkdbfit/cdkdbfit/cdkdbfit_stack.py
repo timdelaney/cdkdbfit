@@ -19,7 +19,7 @@ class cdkdbfitStack(core.Stack):
 
         # add image to repo
         dockerImageAsset = aws_ecr_assets.DockerImageAsset(
-            self, "dbfitImg", directory="/Users/timothydelaney/Desktop", repository_name="dbfit", exclude=[
+            self, "dbfitImg", directory="./", repository_name="dbfit", exclude=[
                 'node_modules',
                 '.git',
                 'cdk.out'])
