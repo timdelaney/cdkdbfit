@@ -2,13 +2,13 @@ import json
 import pytest
 
 from aws_cdk import core
-from projects.projects_stack import ProjectsStack
+from cdktest.cdktest_stack import CdktestStack
 
 
 def get_template():
     app = core.App()
-    ProjectsStack(app, "projects")
-    return json.dumps(app.synth().get_stack("projects").template)
+    CdktestStack(app, "cdktest")
+    return json.dumps(app.synth().get_stack("cdktest").template)
 
 
 def test_sqs_queue_created():
