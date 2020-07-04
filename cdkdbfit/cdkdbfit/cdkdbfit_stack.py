@@ -7,7 +7,7 @@ from aws_cdk import (
 )
 
 
-class CdktestStack(core.Stack):
+class cdkdbfitStack(core.Stack):
 
     def __init__(self, scope: core.Construct, id: str, **kwargs) -> None:
         super().__init__(scope, id, **kwargs)
